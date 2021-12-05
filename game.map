@@ -1,0 +1,170 @@
+ROM Bank #0 (HOME):
+  SECTION: $0000-$3FFF ($4000 bytes)
+           $01B2 = Jump_000_01b2
+           $01C1 = Jump_000_01c1
+           $01FD = Jump_000_01fd
+           $01FE = Jump_000_01fe
+           $0150 = Jump_000_0150
+           $0217 = Call_000_0217
+           $0247 = Call_000_0247
+           $0228 = Call_000_0228
+           $0232 = Call_000_0232
+           $01FF = Call_000_01ff
+           $0945 = Jump_000_0945
+           $0274 = Call_000_0274
+           $01D8 = Call_000_01d8
+           $02D5 = Call_000_02d5
+           $0304 = Call_000_0304
+           $0383 = Call_000_0383
+           $0485 = Call_000_0485
+           $0357 = Call_000_0357
+           $0217 = Jump_000_0217
+           $0247 = Jump_000_0247
+           $02A3 = Call_000_02a3
+           $02BC = Call_000_02bc
+           $03D6 = Call_000_03d6
+           $023D = Call_000_023d
+           $045A = Call_000_045a
+           $04A2 = Call_000_04a2
+           $04EA = Call_000_04ea
+           $05CD = Call_000_05cd
+           $0425 = Call_000_0425
+           $05C4 = Jump_000_05c4
+           $084F = Call_000_084f
+           $0829 = Call_000_0829
+           $03F0 = Call_000_03f0
+           $05DD = Call_000_05dd
+           $0602 = Jump_000_0602
+           $062E = Call_000_062e
+           $0672 = Call_000_0672
+           $06B9 = Call_000_06b9
+           $0767 = Call_000_0767
+           $08BD = Jump_000_08bd
+           $0886 = Call_000_0886
+           $0815 = Call_000_0815
+           $074C = Call_000_074c
+           $06BE = Jump_000_06be
+           $07FA = Call_000_07fa
+           $076C = Jump_000_076c
+           $094A = Call_000_094a
+           $0256 = Call_000_0256
+           $0264 = Call_000_0264
+           $029C = Call_000_029c
+           $02B2 = Call_000_02b2
+           $02CB = Call_000_02cb
+           $093B = Call_000_093b
+           $0BBD = Call_000_0bbd
+           $0C03 = Call_000_0c03
+           $0627 = Call_000_0627
+           $05D7 = Call_000_05d7
+           $049B = Call_000_049b
+           $06B0 = Call_000_06b0
+           $0144 = HeaderNewLicenseeCode
+           $0149 = HeaderRAMSize
+           $014B = HeaderOldLicenseeCode
+           $014E = HeaderGlobalChecksum
+           $0148 = HeaderROMSize
+           $014D = HeaderComplementCheck
+           $0060 = JoypadTransitionInterrupt
+           $0147 = HeaderCartridgeType
+           $0040 = VBlankInterrupt
+           $0058 = SerialTransferCompleteInterrupt
+           $014C = HeaderMaskROMVersion
+           $0028 = RST_28
+           $0020 = RST_20
+           $0038 = RST_38
+           $0030 = RST_30
+           $0008 = RST_08
+           $0000 = RST_00
+           $0018 = RST_18
+           $0010 = RST_10
+           $0048 = LCDCInterrupt
+           $0050 = TimerOverflowInterrupt
+           $0104 = HeaderLogo
+           $0100 = Boot
+           $0146 = HeaderSGBFlag
+           $0134 = HeaderTitle
+           $014A = HeaderDestinationCode
+    SLACK: $0000 bytes
+
+ROM Bank #1:
+  SECTION: $4000-$7FFF ($4000 bytes)
+           $4A0A = Call_001_4a0a
+           $42CC = Call_001_42cc
+           $4364 = Jump_001_4364
+           $49A1 = Call_001_49a1
+           $488D = Jump_001_488d
+           $49CC = Call_001_49cc
+           $437A = Call_001_437a
+           $49B9 = Call_001_49b9
+           $4408 = Jump_001_4408
+           $437A = Jump_001_437a
+           $485B = Call_001_485b
+           $443D = Jump_001_443d
+           $4478 = Jump_001_4478
+           $44B7 = Jump_001_44b7
+           $49EC = Call_001_49ec
+           $469E = Jump_001_469e
+           $469E = Call_001_469e
+           $47BD = Call_001_47bd
+           $478C = Call_001_478c
+           $47DF = Call_001_47df
+           $49DB = Call_001_49db
+           $4827 = Call_001_4827
+           $4923 = Call_001_4923
+           $4849 = Call_001_4849
+           $4879 = Call_001_4879
+           $48D4 = Jump_001_48d4
+           $491A = Jump_001_491a
+           $4BC5 = Jump_001_4bc5
+           $4ADF = Jump_001_4adf
+           $4C1A = Call_001_4c1a
+           $4C20 = Jump_001_4c20
+           $4AF8 = Jump_001_4af8
+    SLACK: $0000 bytes
+
+WRAM Bank #0:
+  EMPTY
+
+WRAM Bank #1:
+  EMPTY
+
+WRAM Bank #2:
+  EMPTY
+
+WRAM Bank #3:
+  EMPTY
+
+WRAM Bank #4:
+  EMPTY
+
+WRAM Bank #5:
+  EMPTY
+
+WRAM Bank #6:
+  EMPTY
+
+WRAM Bank #7:
+  EMPTY
+
+VRAM Bank #0:
+  EMPTY
+
+VRAM Bank #1:
+  EMPTY
+
+HRAM:
+  EMPTY
+
+SRAM Bank #0:
+  EMPTY
+
+SRAM Bank #1:
+  EMPTY
+
+SRAM Bank #2:
+  EMPTY
+
+SRAM Bank #3:
+  EMPTY
+
