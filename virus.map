@@ -1,0 +1,495 @@
+ROM Bank #0 (HOME):
+  SECTION: $0000-$0000 ($0001 bytes)
+  SECTION: $0008-$0008 ($0001 bytes)
+  SECTION: $0010-$0010 ($0001 bytes)
+  SECTION: $0018-$001A ($0003 bytes)
+  SECTION: $0020-$0020 ($0001 bytes)
+  SECTION: $0028-$0028 ($0001 bytes)
+  SECTION: $0030-$0030 ($0001 bytes)
+  SECTION: $0038-$0038 ($0001 bytes)
+  SECTION: $0040-$0042 ($0003 bytes)
+  SECTION: $0048-$0048 ($0001 bytes)
+  SECTION: $0050-$0052 ($0003 bytes)
+  SECTION: $0058-$005A ($0003 bytes)
+  SECTION: $0060-$0060 ($0001 bytes)
+  SECTION: $0100-$0103 ($0004 bytes)
+  SECTION: $0104-$014F ($004C bytes)
+  SECTION: $0150-$1D9F ($1C50 bytes)
+           $01B2 = JumpToFuncInTable
+           $01C1 = VBlankInterruptHandler
+           $01FD = TimerInterruptHandler
+           $01FE = SerialInterruptHandler
+           $0150 = start
+           $0217 = ClearData
+           $0DA0 = GameGfx
+           $0247 = LoadGfx
+           $0228 = ClearOAMBuffer
+           $0232 = ClearBackground
+           $01FF = WriteDMACodeToHRAM
+           $0945 = Main
+           $0274 = ReadJoypad
+           $01D8 = DrawCurrentScreen
+           $01E2 = DrawTitlescreen
+           $01E5 = DrawGame
+           $01FA = DrawGameOver
+           $02D5 = DrawScore
+           $0304 = DrawPlayerPaddle
+           $0383 = DrawComputerPaddle
+           $0485 = DrawBall
+           $0357 = DrawLasers
+           $020D = DMARoutine
+           $02A3 = InitPlayerPaddle
+           $02BC = InitComputerPaddle
+           $03D6 = InitBall
+           $023D = ClearBlood
+           $045A = CheckForGameFinished
+           $04A2 = UpdateBallYPosition
+           $04EA = UpdateBallXPosition
+           $05CD = InvertBC
+           $0425 = ComputerScorePoint
+           $05C4 = UpdateBallXPosition.saveXPosition
+           $084F = IncreaseBallYSpeed
+           $0829 = DecreaseBallYSpeed
+           $03F0 = PlayerScorePoint
+           $05DD = MovePlayerLasers
+           $0602 = MoveComputerLasers
+           $062E = ShootPlayerLasers
+           $0672 = ShootComputerLasers
+           $06B9 = HandlePlayerLaserCollisions
+           $0767 = HandleComputerLaserCollisions
+           $08BD = HandleLaserPairCollisions
+           $0886 = IncreaseBallXSpeed
+           $0815 = FlipBallDirection
+           $074C = LaserHitComputerPaddle
+           $06BE = HandlePlayerLaserCollisions.loop
+           $07FA = LaserHitPlayerPaddle
+           $076C = HandleComputerLaserCollisions.loop
+           $094A = RunCurrentScreen
+           $0954 = RunTitlescreen
+           $0B6C = RunGame
+           $0C86 = RunGameOver
+           $095C = LoadTitlescreenGraphics
+           $0B56 = MainTitlescreen
+           $0256 = ClearGfx
+           $0A36 = TitlescreenMainTextA
+           $0264 = PrintText
+           $0A47 = TitlescreenMainTextB
+           $0A58 = TitlescreenMainTextC
+           $0A69 = TitlescreenMainTextD
+           $0A7A = TitlescreenMainTextE
+           $0A8B = TitlescreenMainTextF
+           $0A9C = TitlescreenMainTextG
+           $0AAD = TitlescreenMainTextH
+           $0ABE = TitlescreenMainTextI
+           $0ACF = TitlescreenMainTextJ
+           $0AE0 = TitlescreenMainTextK
+           $0AF1 = TitlescreenMainTextL
+           $0B02 = TitlescreenMainTextM
+           $0B13 = TitlescreenMainTextN
+           $0B24 = TitlescreenMainTextO
+           $0B35 = TitlescreenMainTextP
+           $0B46 = TitlescreenTopRow
+           $0B4B = TitlescreenBottomRow
+           $0B74 = InitGame
+           $0B9C = GameLoop
+           $029C = ResetScores
+           $02B2 = InitPlayerLasers
+           $02CB = InitComputerLasers
+           $093B = WaitForNextFrame
+           $0BBD = MovePlayerPaddle
+           $0C03 = MoveComputerPaddle
+           $0627 = ShootLasers
+           $05D7 = MoveLasers
+           $049B = MoveBall
+           $06B0 = HandleLaserCollisions
+           $0D28 = PlayerWonText
+           $0D37 = PlayerWonText2
+           $0D46 = PlayerWonText3
+           $0D55 = PlayerWonText4
+           $0D64 = ComputerWonText
+           $0D73 = ComputerWonText2
+           $0D82 = ComputerWonText3
+           $0D91 = ComputerWonText4
+    SLACK: $234B bytes
+
+ROM Bank #1:
+  SECTION: $4000-$5C2F ($1C30 bytes)
+           $422E = Music_Game
+           $4000 = SFX_Headers_02
+           $423A = PlayMusic
+           $4297 = Music2_UpdateMusic
+           $4DB3 = SFX_02_01_Ch1
+           $4DB7 = SFX_02_02_Ch1
+           $4DBB = SFX_02_03_Ch1
+           $4DBF = SFX_02_04_Ch1
+           $4DC3 = SFX_02_05_Ch1
+           $4DD6 = SFX_02_06_Ch1
+           $4DDA = SFX_02_07_Ch1
+           $4DE1 = SFX_02_08_Ch1
+           $4DE5 = SFX_02_09_Ch1
+           $4DE9 = SFX_02_0a_Ch1
+           $4DED = SFX_02_0b_Ch1
+           $4DF1 = SFX_02_0c_Ch1
+           $4DF5 = SFX_02_0d_Ch1
+           $4DF9 = SFX_02_0e_Ch1
+           $4DFD = SFX_02_0f_Ch1
+           $4E04 = SFX_02_10_Ch1
+           $4E0B = SFX_02_11_Ch1
+           $4E0F = SFX_02_12_Ch1
+           $4E13 = SFX_02_13_Ch1
+           $4E17 = SFX_02_14_Ch1
+           $4E26 = SFX_02_14_Ch2
+           $4E35 = SFX_02_14_Ch3
+           $4E3F = SFX_02_15_Ch1
+           $4E52 = SFX_02_15_Ch2
+           $4E65 = SFX_02_15_Ch3
+           $4E72 = SFX_02_16_Ch1
+           $4E81 = SFX_02_16_Ch2
+           $4E8F = SFX_02_16_Ch3
+           $4E90 = SFX_02_17_Ch1
+           $4EAF = SFX_02_17_Ch2
+           $4ECE = SFX_02_17_Ch3
+           $4EDB = SFX_02_18_Ch1
+           $4EFA = SFX_02_18_Ch2
+           $4F19 = SFX_02_18_Ch3
+           $4F2C = SFX_02_19_Ch1
+           $4F3F = SFX_02_19_Ch2
+           $4F51 = SFX_02_19_Ch3
+           $4F52 = SFX_02_1a_Ch1
+           $4F6C = SFX_02_1a_Ch2
+           $4F6D = SFX_02_1a_Ch3
+           $4F80 = SFX_02_1b_Ch1
+           $4F8F = SFX_02_1b_Ch2
+           $4F9E = SFX_02_1b_Ch3
+           $4FA8 = SFX_02_1c_Ch1
+           $4FBB = SFX_02_1c_Ch2
+           $4FCE = SFX_02_1c_Ch3
+           $4FD8 = SFX_02_1d_Ch1
+           $4FF5 = SFX_02_1d_Ch2
+           $5016 = SFX_02_1d_Ch3
+           $502F = SFX_02_1e_Ch1
+           $504E = SFX_02_1e_Ch2
+           $5071 = SFX_02_1e_Ch3
+           $508A = SFX_02_1f_Ch1
+           $50B5 = SFX_02_1f_Ch2
+           $50D4 = SFX_02_1f_Ch3
+           $50ED = SFX_02_20_Ch1
+           $5114 = SFX_02_20_Ch2
+           $513A = SFX_02_20_Ch3
+           $513B = SFX_02_21_Ch1
+           $515A = SFX_02_21_Ch2
+           $5189 = SFX_02_21_Ch3
+           $51A8 = SFX_02_22_Ch1
+           $51BB = SFX_02_22_Ch2
+           $51CE = SFX_02_22_Ch3
+           $51D8 = SFX_02_23_Ch1
+           $51F3 = SFX_02_23_Ch2
+           $520E = SFX_02_23_Ch3
+           $521E = SFX_02_24_Ch1
+           $5241 = SFX_02_24_Ch2
+           $5264 = SFX_02_24_Ch3
+           $526E = SFX_02_25_Ch1
+           $528D = SFX_02_25_Ch2
+           $52B0 = SFX_02_25_Ch3
+           $52C6 = SFX_02_26_Ch1
+           $52D9 = SFX_02_26_Ch2
+           $52EC = SFX_02_26_Ch3
+           $52F9 = SFX_02_27_Ch1
+           $5314 = SFX_02_27_Ch2
+           $532F = SFX_02_27_Ch3
+           $5342 = SFX_02_28_Ch1
+           $5351 = SFX_02_28_Ch2
+           $5360 = SFX_02_28_Ch3
+           $536A = SFX_02_29_Ch1
+           $5385 = SFX_02_29_Ch2
+           $53A0 = SFX_02_29_Ch3
+           $53B3 = SFX_02_2a_Ch1
+           $53C2 = SFX_02_2a_Ch2
+           $53D1 = SFX_02_2a_Ch3
+           $53DB = SFX_02_2b_Ch1
+           $53EE = SFX_02_2b_Ch2
+           $5401 = SFX_02_2b_Ch3
+           $540E = SFX_02_2c_Ch1
+           $5431 = SFX_02_2c_Ch2
+           $5454 = SFX_02_2c_Ch3
+           $5467 = SFX_02_2d_Ch1
+           $5476 = SFX_02_2d_Ch2
+           $5488 = SFX_02_2d_Ch3
+           $5489 = SFX_02_2e_Ch1
+           $54A4 = SFX_02_2e_Ch2
+           $54BF = SFX_02_2e_Ch3
+           $54D2 = SFX_02_2f_Ch1
+           $54E9 = SFX_02_2f_Ch2
+           $5500 = SFX_02_2f_Ch3
+           $550D = SFX_02_30_Ch1
+           $5530 = SFX_02_30_Ch2
+           $554B = SFX_02_30_Ch3
+           $555B = SFX_02_31_Ch1
+           $5576 = SFX_02_31_Ch2
+           $5591 = SFX_02_31_Ch3
+           $55A1 = SFX_02_32_Ch1
+           $55C4 = SFX_02_32_Ch2
+           $55EB = SFX_02_32_Ch3
+           $5607 = SFX_02_33_Ch1
+           $561A = SFX_02_33_Ch2
+           $562D = SFX_02_33_Ch3
+           $563A = SFX_02_34_Ch1
+           $564D = SFX_02_34_Ch2
+           $5660 = SFX_02_34_Ch3
+           $566D = SFX_02_35_Ch1
+           $5690 = SFX_02_35_Ch2
+           $56B2 = SFX_02_35_Ch3
+           $56B3 = SFX_02_36_Ch1
+           $56C6 = SFX_02_36_Ch2
+           $56D9 = SFX_02_36_Ch3
+           $56E6 = SFX_02_37_Ch1
+           $56FD = SFX_02_37_Ch2
+           $5710 = SFX_02_37_Ch3
+           $571D = SFX_02_38_Ch1
+           $5740 = SFX_02_38_Ch2
+           $5763 = SFX_02_38_Ch3
+           $5773 = SFX_02_39_Ch1
+           $578A = SFX_02_39_Ch2
+           $57A1 = SFX_02_39_Ch3
+           $57AE = SFX_02_3a_Ch1
+           $57C5 = SFX_02_3a_Ch2
+           $57D5 = SFX_02_3a_Ch3
+           $57E5 = SFX_02_3b_Ch1
+           $5804 = SFX_02_3b_Ch2
+           $581C = SFX_02_3b_Ch3
+           $5831 = SFX_02_3c_Ch1
+           $5842 = SFX_02_3d_Ch1
+           $5851 = SFX_02_3e_Ch1
+           $5866 = SFX_02_3f_Ch1
+           $586D = SFX_02_40_Ch1
+           $5880 = SFX_02_41_Ch1
+           $5899 = SFX_02_41_Ch2
+           $58AF = SFX_02_41_Ch3
+           $58CE = SFX_02_42_Ch1
+           $58ED = SFX_02_42_Ch2
+           $5909 = SFX_02_42_Ch3
+           $5913 = SFX_02_43_Ch1
+           $5926 = SFX_02_44_Ch1
+           $5935 = SFX_02_45_Ch1
+           $5960 = SFX_02_46_Ch1
+           $5973 = SFX_02_47_Ch1
+           $5986 = SFX_02_48_Ch1
+           $59A1 = SFX_02_49_Ch1
+           $59B8 = SFX_02_4a_Ch1
+           $59CD = SFX_02_4b_Ch1
+           $59E8 = SFX_02_4c_Ch1
+           $5A03 = SFX_02_4d_Ch1
+           $5A0E = SFX_02_4e_Ch1
+           $5A19 = SFX_02_4f_Ch1
+           $5A26 = SFX_02_50_Ch1
+           $5A57 = SFX_02_51_Ch1
+           $5A6E = SFX_02_51_Ch2
+           $5A81 = SFX_02_52_Ch1
+           $5A8C = SFX_02_53_Ch1
+           $5AA5 = SFX_02_54_Ch1
+           $5AC4 = SFX_02_54_Ch2
+           $5AE3 = SFX_02_55_Ch1
+           $5B00 = SFX_02_56_Ch1
+           $5B10 = SFX_02_57_Ch1
+           $5B17 = SFX_02_58_Ch1
+           $5B1E = SFX_02_58_Ch2
+           $5B29 = SFX_02_59_Ch1
+           $5B30 = SFX_02_59_Ch2
+           $5B3B = SFX_02_5a_Ch1
+           $5B46 = SFX_02_5a_Ch2
+           $5B55 = SFX_02_5b_Ch1
+           $5B60 = SFX_02_5c_Ch1
+           $5B70 = SFX_02_5d_Ch1
+           $5B8F = SFX_02_5d_Ch2
+           $5BB2 = SFX_02_5e_Ch1
+           $5BC9 = SFX_02_5f_Ch1
+           $4D35 = Music_Game_Ch1
+           $4D44 = Music_Game_Ch2
+           $4D61 = Music_Game_Ch3
+           $4D81 = Music_Game_Ch4
+           $4A0A = Func_9876
+           $42CC = Music2_ApplyMusicAffects
+           $4364 = Music2_PlayNextNote
+           $49A1 = Music2_ApplyDutyCycle
+           $488D = Music2_ApplyPitchBend
+           $49CC = Func_9838
+           $437A = Music2_endchannel
+           $49B9 = Music2_GetNextMusicByte
+           $4408 = Music2_callchannel
+           $4CB3 = Unknown_9b1f
+           $485B = Func_96c7
+           $443D = Music2_loopchannel
+           $4478 = Music2_notetype
+           $44B7 = Music2_toggleperfectpitch
+           $49EC = Func_9858
+           $469E = Music2_notelength
+           $47BD = Func_9629
+           $478C = Func_95f8
+           $47DF = Func_964b
+           $49DB = Func_9847
+           $4827 = Func_9693
+           $4923 = Func_978f
+           $4CBB = Unknown_9b27
+           $4CDB = Music2_WavePointers
+           $4849 = Func_96b5
+           $4879 = Func_96e5
+           $48D4 = Music2_ApplyPitchBend.asm_9740
+           $491A = Music2_ApplyPitchBend.asm_9786
+           $4CAB = Unknown_9b17
+           $4CC3 = Music2_Pitches
+           $4BC8 = Func_9a34
+           $4AE2 = Func_994e
+           $4C1D = FillMusicRAM2
+           $4C23 = Func_9a8f
+           $4AFB = Func_994e.asm_9967
+           $4CAA = Noise2_endchannel
+           $4CE5 = Music2_WavePointers.wave0
+           $4CF5 = Music2_WavePointers.wave1
+           $4D05 = Music2_WavePointers.wave2
+           $4D15 = Music2_WavePointers.wave3
+           $4D25 = Music2_WavePointers.wave4
+           $4D3E = Music_Game_Ch1_b0
+           $4D5D = Music_Game_Ch2_b1
+           $4D4B = Music_Game_Ch2_b0
+           $4D80 = Music_Game_Ch3_b1
+           $4D63 = Music_Game_Ch3_b0
+           $4DAF = Music_Game_Ch4_b1
+           $4D83 = Music_Game_Ch4_b0
+    SLACK: $23D0 bytes
+
+WRAM Bank #0:
+  SECTION: $C000-$C000 ($0001 bytes)
+           $C000 = VBlankFlag
+    SLACK: $0FFF bytes
+
+WRAM Bank #1:
+  SECTION: $D000-$D1F7 ($01F8 bytes)
+           $D1F5 = wcfc8
+           $D1F6 = wcfc9
+           $D1F7 = wcfca
+           $D0B0 = wLasers
+           $D0CE = wComputerLasers
+           $D000 = wOAMBuffer
+           $D004 = wLaserSprites
+           $D0A1 = wScreenState
+           $D000 = wBallSprite
+           $D0ED = wComputerLaserCooldown
+           $D0A2 = wPlayerY
+           $D0F2 = wScratch
+           $D0EF = wComputerScore
+           $D0A5 = wComputerY
+           $D0B0 = wPlayerLasers
+           $D0EC = wPlayerLaserCooldown
+           $D0A0 = wCurrentScreen
+           $D0EE = wPlayerScore
+           $D0F3 = wScratch2
+           $D0F1 = wStartPlayTimer
+           $D1C3 = wc0cf
+           $D1C2 = wc0ce
+           $D19A = wc0a6
+           $D1A2 = wc0ae
+           $D1BA = wc0c6
+           $D1F4 = wMusicHeaderPointer
+           $D1DA = wc0e6
+           $D1DB = wc0e7
+           $D1DC = wc0e8
+           $D1DD = wc0e9
+           $D1D2 = wc0de
+           $D1AA = wc0b6
+           $D1E1 = wc0ed
+           $D1E2 = wc0ee
+           $D1E3 = wc0ef
+           $D1DE = wc0ea
+           $D1DF = wc0eb
+           $D1E0 = wc0ec
+           $D1B2 = wc0be
+           $D1C9 = wc0d5
+           $D1C8 = wc0d4
+           $D1CA = wc0d6
+           $D1C5 = wc0d1
+           $D1C4 = wc0d0
+           $D1C7 = wc0d3
+           $D1C6 = wc0d2
+           $D1E6 = wc0f2
+           $D1E5 = wc0f1
+           $D1E4 = wc0f0
+           $D106 = wc012
+           $D10A = wc016
+           $D12A = wc036
+           $D152 = wc05e
+           $D0F5 = wc001
+           $D0F4 = wc000
+           $D0F7 = wc003
+           $D0F6 = wc002
+           $D0F9 = wc005
+           $D0F8 = wc004
+           $D0FA = wc006
+           $D120 = wc02c
+           $D11F = wc02b
+           $D11E = wc02a
+           $D122 = wc02e
+           $D121 = wc02d
+           $D14A = wc056
+           $D132 = wc03e
+           $D11B = wc027
+           $D11A = wc026
+           $D11C = wc028
+           $D102 = wc00e
+           $D16A = wc076
+           $D192 = wc09e
+           $D13A = wc046
+           $D162 = wc06e
+           $D18A = wc096
+           $D172 = wc07e
+           $D15A = wc066
+           $D142 = wc04e
+           $D17A = wc086
+           $D182 = wc08e
+           $D0F0 = wWinner
+           $D0A8 = wBallY
+           $D0AA = wBallX
+           $D0AE = wBallXSpeed
+           $D0AC = wBallYSpeed
+           $D0A4 = wPlayerHeight
+           $D0A7 = wComputerHeight
+    SLACK: $0E08 bytes
+
+WRAM Bank #2:
+  EMPTY
+
+WRAM Bank #3:
+  EMPTY
+
+WRAM Bank #4:
+  EMPTY
+
+WRAM Bank #5:
+  EMPTY
+
+WRAM Bank #6:
+  EMPTY
+
+WRAM Bank #7:
+  EMPTY
+
+VRAM Bank #0:
+  EMPTY
+
+VRAM Bank #1:
+  EMPTY
+
+HRAM:
+  EMPTY
+
+SRAM Bank #0:
+  EMPTY
+
+SRAM Bank #1:
+  EMPTY
+
+SRAM Bank #2:
+  EMPTY
+
+SRAM Bank #3:
+  EMPTY
+
