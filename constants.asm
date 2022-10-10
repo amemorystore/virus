@@ -1,3 +1,4 @@
+; -. _
 INCLUDE "hram.asm"
 INCLUDE "vram.asm"
 

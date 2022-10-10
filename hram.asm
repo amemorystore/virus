@@ -1,4 +1,4 @@
-; can't use $ff80 - $ff89 because 
+; can't use $ff80 - $ff89 because
 ; that's where the DMA routine is
 hJoypadState      EQU $FF90  
 ; see joy_constants.asm
