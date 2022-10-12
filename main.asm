@@ -2256,32 +2256,32 @@ RunGameOver:
 ;..................................*
 ;.
 PlayerWonText:
-        db "gfksjhfkdsghjk@"
+        db "..............@"
 
 PlayerWonText2:
-        db "44444444444444@"
+        db "..............@"
 	
 PlayerWonText3:
-        db "44444444444444@"
+        db "..............@"
 	
 PlayerWonText4:
-        db "jhakjfgsbnkjhg@"
+        db "..............@"
 ;.
 ;..............................*
 ;................................*
 ;..................................*
 ;.
 ComputerWonText:
-        db "gfksjhfkdsghjk@"
+        db "..............@"
 
 ComputerWonText2:
-        db "44444444444444@"
+        db "..............@"
 
 ComputerWonText3:
-        db "44444444444444@"
+        db "..............@"
 	
 ComputerWonText4: ; ,
-        db "jhakjfgsbnkjhg@"
+        db "..............@"
 ;.
 ;..............................*
 ;................................*
