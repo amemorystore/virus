@@ -1,1 +1,1 @@
-pong with a COVID-19-viron
+pong with a COVID-19 viron
