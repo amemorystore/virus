@@ -1,6 +1,7 @@
+;....._ ......*
 charmap "@", $0
 charmap " ", $1
-
+;.
 charmap "0", $20
 charmap "1", $21
 charmap "2", $22
