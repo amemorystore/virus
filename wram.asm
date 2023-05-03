@@ -11,7 +11,7 @@ SECTION "WRAM Bank 1", WRAMX, BANK[1]
 wOAMBuffer:: ; d000
     ; buffer for OAM data. Copied to OAM by DMA
 wBallSprite::
-    ds 4  ; Pong ball's OAM data is the first entry
+    ds 4  ; viron's OAM data is the first entry
 wLaserSprites::
     ds 4 * MAX_LASERS
     ds 4 * (39 - MAX_LASERS)
