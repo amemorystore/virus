@@ -51,7 +51,7 @@ wComputerLasers::
     ds 5 * MAX_LASERS
 
 wPlayerLaserCooldown::
-; Must be 0 for player to shoot a laser. Counts down every frame.
+; Must be 0 for player to shoot a tear / blood. Counts down every frame.
     ds 1
 wComputerLaserCooldown::
     ds 1
@@ -67,7 +67,7 @@ wWinner::
     ds 1
 
 wStartPlayTimer::
-; Counts down to zero before a new ball is started.
+; Ccounts down to zero before a new ball is started!
     ds 1
 
 ; Scratch registers
@@ -75,9 +75,6 @@ wScratch::
     ds 1
 wScratch2::
     ds 1
-
-; Music memory used by the pokemon music engine
-; These names are copied from the pokered disassembly
 
 wc000:: ds 1
 wc001:: ds 1
