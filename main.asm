@@ -403,7 +403,7 @@ ReadJoypad:
         ld a, [rJOYP]
         and $f
         or b
-        cpl  ; a has current pressed btns
+        cpl  ; a has current pressed buttons
         ld [hJoypadState], a
         ret
 ;.
