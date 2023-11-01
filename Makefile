@@ -1,4 +1,4 @@
-#..............#
+# .     #
 .PHONY: all compare clean
 
 .SUFFIXES:
