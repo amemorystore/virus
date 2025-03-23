@@ -324,7 +324,7 @@ ClearBackground:
 ClearBlood:
         xor a
         ld hl, wLasers
-        ld bc, (MAX_LASERS * 2 * 5)
+        ld bc, (MAX_DROPS * 2 * 5)
         jp ClearData
 ;.
 ;..............................*
@@ -439,7 +439,7 @@ InitPlayerPaddle:
 InitPlayerLasers:
         xor a
         ld hl, wPlayerLasers
-        ld bc, 5 * MAX_LASERS
+        ld bc, 5 * MAX_DROPS
         jp ClearData
 ;.
 ;..............................*
@@ -463,7 +463,7 @@ InitComputerPaddle:
 InitComputerLasers:
         xor a
         ld hl, wComputerLasers
-        ld bc, 5 * MAX_LASERS
+        ld bc, 5 * MAX_DROPS
         jp ClearData
 ;.
 ;..............................*
@@ -583,7 +583,7 @@ DrawLasers:
         ld hl, wLasers
         ld de, wLaserSprites        
 ; OAM buffer destination for laser sprites
-        ld b, 1 + (MAX_LASERS * 2)  
+        ld b, 1 + (MAX_DROPS * 2)  
 ; drawing both player and computer lasers
 .loop
         dec b
@@ -1049,7 +1049,7 @@ MoveLasers:
 ;.
 MovePlayerLasers:
         ld hl, wPlayerLasers
-        ld b, MAX_LASERS + 1
+        ld b, MAX_DROPS + 1
 .loop
         dec b
         ret z
@@ -1086,7 +1086,7 @@ MovePlayerLasers:
 ;.
 MoveComputerLasers:
         ld hl, wComputerLasers
-        ld b, MAX_LASERS + 1
+        ld b, MAX_DROPS + 1
 .loop
         dec b
         ret z
@@ -1138,7 +1138,7 @@ ShootPlayerLasers:
         and a
         jr nz, .done
         ld hl, wPlayerLasers
-        ld b, MAX_LASERS + 1
+        ld b, MAX_DROPS + 1
 .loop
         dec b
         jr z, .done
@@ -1186,7 +1186,7 @@ ShootComputerLasers:
         and a
         jr nz, .done
         ld hl, wComputerLasers
-        ld b, MAX_LASERS + 1
+        ld b, MAX_DROPS + 1
 .loop
         dec b
         jr z, .done
@@ -1241,7 +1241,7 @@ HandleLaserCollisions:
 ;.
 HandlePlayerLaserCollisions:
         ld hl, wPlayerLasers
-        ld b, MAX_LASERS + 1
+        ld b, MAX_DROPS + 1
 .loop
         dec b
         ret z
@@ -1380,7 +1380,7 @@ LaserHitComputerPaddle:
 ;.
 HandleComputerLaserCollisions:
         ld hl, wComputerLasers
-        ld b, MAX_LASERS + 1
+        ld b, MAX_DROPS + 1
 .loop
         dec b
         ret z
@@ -1654,7 +1654,7 @@ IncreaseBallXSpeed:
 ;.
 HandleLaserPairCollisions:
         ld hl, wPlayerLasers
-        ld a, MAX_LASERS
+        ld a, MAX_DROPS
         ld [wScratch], a
 .loopPlayerLasers
         ld a, [wScratch]
@@ -1670,7 +1670,7 @@ HandleLaserPairCollisions:
         jr .loopPlayerLasers
 .checkComputerLasers
         ld de, wComputerLasers
-        ld a, MAX_LASERS
+        ld a, MAX_DROPS
         ld [wScratch2], a
         push hl
 .loopComputerLasers
