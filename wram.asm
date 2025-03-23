@@ -1,3 +1,4 @@
+;#.      #
 INCLUDE "constants/movement_constants.asm"
 
 SECTION "WRAM Bank 0", WRAM0
@@ -13,8 +14,8 @@ wOAMBuffer:: ; d000
 wBallSprite::
     ds 4  ; viron's OAM data is the first entry
 wLaserSprites::
-    ds 4 * MAX_LASERS
-    ds 4 * (39 - MAX_LASERS)
+    ds 4 * MAX_DROPS
+    ds 4 * (39 - MAX_DROPS)
 
 wCurrentScreen::
     ds 1
@@ -46,9 +47,9 @@ wPlayerLasers::
 ; isActive   [1 byte]
 ; y position [2 bytes]
 ; x position [2 bytes]
-    ds 5 * MAX_LASERS
+    ds 5 * MAX_DROPS
 wComputerLasers::
-    ds 5 * MAX_LASERS
+    ds 5 * MAX_DROPS
 
 wPlayerLaserCooldown::
 ; Must be 0 for player to shoot a tear / blood. Counts down every frame.
@@ -71,6 +72,12 @@ wStartPlayTimer::
     ds 1
 
 ; Scratch registers
+; What is the scratch register?
+;.
+; Scratch register / temporary register
+; A register used to hold an intermediate value during a calculation 
+; (usually, such values are not named in the program source and have a limited lifetime).
+; If you call a function, the values in the scratch regsisters may have been changed after the function call...
 wScratch::
     ds 1
 wScratch2::
@@ -145,3 +152,4 @@ wcfc9::
     ds 1
 wcfca::
     ds 1
+;. end
