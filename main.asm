@@ -1911,6 +1911,7 @@ LoadTitlescreenGraphics:
 ;................................*
 ;..................................*
 ;.
+; ferrror rochjert
 TitlescreenMainTextA:
 	db $08,$08,$08,$08,$08,$08,$08,$08,$08,$08,$08,$08,$08,$08,$08,$08,"@"
 TitlescreenMainTextB:
