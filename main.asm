@@ -1,4 +1,4 @@
-;......_ .......
+;......_ .......*
 ;............................*
 ;..............................*
 ;................................*
@@ -1923,19 +1923,19 @@ TitlescreenMainTextD:
 TitlescreenMainTextE:
 	db $08, "nrrrrrrrrrrrro", $08, "@"
 TitlescreenMainTextF:
-	db $08, "rrrghrrrrghrrr", $08, "@"
+	db $08, "rrrrrrrrrrlrrr", $08, "@"
 TitlescreenMainTextG:
-	db $08, "rrrrrrrrrrkrrr", $08, "@"
+	db $08, "rrrrrrrrrrrrrr", $08, "@"
 TitlescreenMainTextH:
-	db $08, "rrrkrrrrrrrrrr", $08, "@"
+	db $08, "rrrrrrrrrrrrrr", $08, "@"
 TitlescreenMainTextI:
 	db $08, "rrrrrrrrrrrrrr", $08, "@"
 TitlescreenMainTextJ:
 	db $08, "rrrrrrrrrrrrrr", $08, "@"
 TitlescreenMainTextK:
-	db $08, "rrrrkrrrrrrrrr", $08, "@"
+	db $08, "rrrrrrrrrrrrrr", $08, "@"
 TitlescreenMainTextL:
-	db $08, "prrrrimjrrrrrq", $08, "@"
+	db $08, "prrrrrrrrrrrrq", $08, "@"
 TitlescreenMainTextM:
 	db $08, $01, "prrrrrrrrrrq", $01, $08, "@"
 TitlescreenMainTextN:
@@ -4831,16 +4831,17 @@ Music2_WavePointers:
         db $01,$23,$45,$67,$8A,$CD,$EE,$F7,$7F,$EE,$DC,$A8,$76,$54,$32,$10
 ;. 
 ; END AUDIO ENGINE END AUDIO ENGINE END AUDIO ENGINE END AUDIO ENGINE END AUDIO ENGINE END AUDIO ENGINE END AUDIO
-;.
+;. ..
 ;..............................*
 ;................................*
 ;..................................*
 ;.
 Music_Game_Ch1: ; declare, b6c7 (2:76c7)
-        tempo 130
-        volume 7, 7
+        tempo 333
+        volume 7, 5
         duty 3
-        notetype 13, 13, 13
+        vibrato 1, 13, 12
+        notetype 11, 13, 13
 ;.
 ;..............................*
 ;................................*
@@ -4848,7 +4849,7 @@ Music_Game_Ch1: ; declare, b6c7 (2:76c7)
 ;.
 Music_Game_Ch1_b0: ; acending decending
         octave 4
-        F_ 1
+        C_ 1
         loopchannel 0, Music_Game_Ch1_b0
 ;.
 ;..............................*
@@ -4883,7 +4884,13 @@ Music_Game_Ch2_b0: ; controller
 ;.
 Music_Game_Ch2_b1: ; melody
         octave 5
-        D# 1
+        D_ 1
+        C_ 3
+        A_ 2
+        B_ 1
+        F_ 1
+        A_ 2
+        B_ 3
         rest 1
         endchannel
 ;.
@@ -4893,6 +4900,12 @@ Music_Game_Ch2_b1: ; melody
 ;.
 Music_Game_Ch3: ; declare
 	notetype 12, 1, 3
+        C_ 1
+        A_ 2
+        B_ 3
+        F_ 1
+        A_ 2
+        B_ 3
 ;.
 ;..............................*
 ;................................*
@@ -4907,6 +4920,12 @@ Music_Game_Ch3_b0: ; controller
         rest 16
         rest 16
         rest 16
+        C_ 1
+        A_ 2
+        B_ 3
+        F_ 1
+        A_ 2
+        B_ 3
         callchannel Music_Game_Ch3_b1
         callchannel Music_Game_Ch3_b1
         callchannel Music_Game_Ch3_b1
