@@ -1,0 +1,23 @@
+termial
+
+egrep -r -n --color '\b ..... \b' *
+
+The following will take a PNG file with a bit depth of 1, 2, or 8, and output planar 2bpp data:
+
+$ rgbgfx -o out.2bpp in.png
+
+The following creates a planar 2bpp file with only unique tiles, and its tilemap out.tilemap:
+
+$ rgbgfx -T -u -o out.2bpp in.png
+
+The following creates a planar 2bpp file with only unique tiles accounting for tile mirroring and its associated tilemap out.tilemap and attrmap out.attrmap:
+
+$ rgbgfx -A -T -m -o out.2bpp in.png
+
+The following will do nothing:
+
+$ rgbgfx in.png
+/???
+
+*******#.     #
+     rgbgfx -o gfx/game.2bpp gfx/game.png
