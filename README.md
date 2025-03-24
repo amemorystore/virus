@@ -1,14 +1,5 @@
 pong with a COVID-19 viron
 
-you can
-open virus.gb in:
-https://sameboy.github.io/
-
-
-
-
-
-
 *
 *
 
