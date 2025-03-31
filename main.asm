@@ -215,6 +215,7 @@ DrawGame:
         call DrawScore
         call DrawPlayerPaddle
         call DrawComputerPaddle
+;.          O
         call ClearOAMBuffer
         call DrawBall
         call DrawLasers
