@@ -217,8 +217,8 @@ DrawGame:
         call DrawComputerPaddle
 ;.          O
         call ClearOAMBuffer
-        call DrawBall
-        call DrawLasers
+        call DrawViron
+        call DrawDrop
         jp $ff80  ; OAM DMA transfer
 ;.
 ;..............................*
@@ -579,7 +579,7 @@ DrawPlayerPaddle:
 ;................................*
 ;..................................*
 ;.
-DrawLasers:
+DrawDrop:
 ; loads player and computer laser sprites to OAM buffer
         ld hl, wLasers
         ld de, wLaserSprites        
@@ -821,7 +821,7 @@ CheckForGameFinished:
 ;................................*
 ;..................................*
 ;.
-DrawBall:
+DrawViron:
         ld hl, wBallSprite
         ld a, [wBallY + 1]
         add 16 - 4
