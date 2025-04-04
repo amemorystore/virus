@@ -20,8 +20,8 @@
 00:02D5 DrawScore
 00:0304 DrawPlayerPaddle
 00:0383 DrawComputerPaddle
-00:0485 DrawBall
-00:0357 DrawLasers
+00:0485 DrawViron
+00:0357 DrawDrop
 00:020D DMARoutine
 00:02A3 InitPlayerPaddle
 00:02BC InitComputerPaddle
