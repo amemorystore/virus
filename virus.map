@@ -35,8 +35,8 @@ ROM Bank #0 (HOME):
            $02D5 = DrawScore
            $0304 = DrawPlayerPaddle
            $0383 = DrawComputerPaddle
-           $0485 = DrawBall
-           $0357 = DrawLasers
+           $0485 = DrawViron
+           $0357 = DrawDrop
            $020D = DMARoutine
            $02A3 = InitPlayerPaddle
            $02BC = InitComputerPaddle
