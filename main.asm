@@ -213,8 +213,8 @@ DrawTitlescreen:
 ;.
 DrawGame:
         call DrawScore
-        call DrawPlayerPaddle
-        call DrawComputerPaddle
+        call DrawPlayer
+        call DrawComputer
 ;.          O
         call ClearOAMBuffer
         call DrawViron
@@ -504,7 +504,7 @@ DrawScore:
 ;................................*
 ;..................................*
 ;.
-DrawPlayerPaddle:
+DrawPlayer:
         ld a, [wPlayerY + 1]
         push af
         srl a
@@ -631,7 +631,7 @@ DrawDrop:
 ;................................*
 ;..................................*
 ;.
-DrawComputerPaddle:
+DrawComputer:
         ld a, [wComputerY + 1]
         push af
         srl a
