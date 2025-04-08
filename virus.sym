@@ -18,8 +18,8 @@
 00:01E5 DrawGame
 00:01FA DrawGameOver
 00:02D5 DrawScore
-00:0304 DrawPlayerPaddle
-00:0383 DrawComputerPaddle
+00:0304 DrawPlayer
+00:0383 DrawComputer
 00:0485 DrawViron
 00:0357 DrawDrop
 00:020D DMARoutine
