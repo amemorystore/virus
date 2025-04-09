@@ -1,4 +1,4 @@
-;......_ ......*
+;#.       #
 BASE_PADDLE_DOWN_SPEED   EQU $0250
 BASE_PADDLE_UP_SPEED     EQU $10000 - BASE_PADDLE_DOWN_SPEED
 ;.
